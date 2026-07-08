@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-cream: #f0e9d2;
+  --color-card: #fff8ea;
+  --color-green: #1b4332;
+  --color-green-light: #8fae9e;
+  --color-rust: #a6321d;
+  --color-tan: #c9a66b;
+  --color-ink: #26312b;
+  --color-muted: #6b5f45;
+  --color-good: #2d6a4f;
+
+  --font-display: "Anton", sans-serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+@theme inline {
+  --color-cream: var(--color-cream);
+  --color-card: var(--color-card);
+  --color-green: var(--color-green);
+  --color-green-light: var(--color-green-light);
+  --color-rust: var(--color-rust);
+  --color-tan: var(--color-tan);
+  --color-ink: var(--color-ink);
+  --color-muted: var(--color-muted);
+  --color-good: var(--color-good);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
